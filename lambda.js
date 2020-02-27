@@ -25,8 +25,9 @@ function writeToS3(S3Client, Key, Body) {
 }
 
 async function run() {
+  const NOW = new Date();
   const menu = await fetchCurrentMenu();
-  const rss = buildRss(menu);
+  const rss = buildRss(menu, NOW);
   if (!rss) {
     return;
   }

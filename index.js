@@ -1,7 +1,9 @@
 const { fetchCurrentMenu } = require("./fetch");
 const { buildRss } = require("./rss");
 
-const main = () => fetchCurrentMenu().then(buildRss);
+const NOW = new Date();
+
+const main = () => fetchCurrentMenu().then(menu => buildRss(menu, NOW));
 
 main()
   .then(console.log)

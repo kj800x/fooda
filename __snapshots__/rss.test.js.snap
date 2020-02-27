@@ -7,7 +7,7 @@ exports[`rss works happy path 1`] = `
  <title>Davenport Fooda</title>
  <description>Kevin Johnson's Davenport Fooda RSS feed</description>
  <link>https://fooda.com/my</link>
- <lastBuildDate>Thu, 27 Feb 2020 22:17:03 GMT</lastBuildDate>
+ <lastBuildDate>Thu, 27 Feb 2020 22:46:39 GMT</lastBuildDate>
  <pubDate>Thu, 27 Feb 2020 11:00:00 GMT</pubDate>
  <ttl>10</ttl>
 
@@ -42,7 +42,7 @@ exports[`rss works just one popup 1`] = `
  <title>Davenport Fooda</title>
  <description>Kevin Johnson's Davenport Fooda RSS feed</description>
  <link>https://fooda.com/my</link>
- <lastBuildDate>Thu, 27 Feb 2020 22:17:03 GMT</lastBuildDate>
+ <lastBuildDate>Thu, 27 Feb 2020 22:46:39 GMT</lastBuildDate>
  <pubDate>Thu, 27 Feb 2020 11:00:00 GMT</pubDate>
  <ttl>10</ttl>
 
@@ -60,7 +60,21 @@ exports[`rss works just one popup 1`] = `
 </rss>"
 `;
 
-exports[`rss works menu not today 1`] = `undefined`;
+exports[`rss works menu not today 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" ?>
+<rss version=\\"2.0\\">
+<channel>
+ <title>Davenport Fooda</title>
+ <description>Kevin Johnson's Davenport Fooda RSS feed</description>
+ <link>https://fooda.com/my</link>
+ <lastBuildDate>Thu, 27 Feb 2020 22:46:39 GMT</lastBuildDate>
+ <pubDate>Thu, 27 Feb 2020 11:00:00 GMT</pubDate>
+ <ttl>10</ttl>
+
+ 
+</channel>
+</rss>"
+`;
 
 exports[`rss works missing link 1`] = `
 "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\" ?>
@@ -69,7 +83,7 @@ exports[`rss works missing link 1`] = `
  <title>Davenport Fooda</title>
  <description>Kevin Johnson's Davenport Fooda RSS feed</description>
  <link>https://fooda.com/my</link>
- <lastBuildDate>Thu, 27 Feb 2020 22:17:03 GMT</lastBuildDate>
+ <lastBuildDate>Thu, 27 Feb 2020 22:46:39 GMT</lastBuildDate>
  <pubDate>Thu, 27 Feb 2020 11:00:00 GMT</pubDate>
  <ttl>10</ttl>
 
@@ -104,7 +118,7 @@ exports[`rss works no popups 1`] = `
  <title>Davenport Fooda</title>
  <description>Kevin Johnson's Davenport Fooda RSS feed</description>
  <link>https://fooda.com/my</link>
- <lastBuildDate>Thu, 27 Feb 2020 22:17:03 GMT</lastBuildDate>
+ <lastBuildDate>Thu, 27 Feb 2020 22:46:39 GMT</lastBuildDate>
  <pubDate>Thu, 27 Feb 2020 11:00:00 GMT</pubDate>
  <ttl>10</ttl>
 
