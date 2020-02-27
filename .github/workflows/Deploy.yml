@@ -1,0 +1,43 @@
+name: Deploy
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy-lambda:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Clone Repo
+      uses: actions/checkout@master
+    - name: Setup Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Cache node modules
+      uses: actions/cache@v1
+      env:
+        cache-name: cache-node-modules
+      with:
+        path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-:
+    - name: NPM Install
+      run: |
+        npm install
+      env:
+        CI: true
+    - name: Zip Project
+      run: zip output.zip -r .
+    - name: Upload to Lambda
+      uses: appleboy/lambda-action
+      with:
+        aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws_region: 'us-east-1'
+        function_name: fooda
+        zip_file: output.zip
