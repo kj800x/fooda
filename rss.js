@@ -33,18 +33,14 @@ const template = ({
 </rss>`;
 
 const buildRss = menuInfo => {
-  if (menuInfo.currentDay !== menuInfo.menuDay) {
-    return;
-  }
-
   const pubDate = new Date();
   pubDate.setDate(menuInfo.menuDay);
   pubDate.setMinutes(0);
   pubDate.setHours(6);
   pubDate.setSeconds(0);
   pubDate.setMilliseconds(0);
-  const popups = menuInfo.popups;
-
+  
+  const popups = menuInfo.currentDay !== menuInfo.menuDay ? menuInfo.popups : []
   const dow = DAYS[pubDate.getDay() - 1];
 
   return template({ pubDate, NOW, popups, dow });
