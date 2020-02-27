@@ -41,7 +41,7 @@ const buildRss = (menuInfo, NOW) => {
   pubDate.setMilliseconds(0);
 
   const popups =
-    menuInfo.currentDay !== menuInfo.menuDay ? menuInfo.popups : [];
+    menuInfo.currentDay === menuInfo.menuDay ? menuInfo.popups : [];
   const dow = DAYS[pubDate.getDay() - 1];
 
   return template({ pubDate, NOW, popups, dow });
