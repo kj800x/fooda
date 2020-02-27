@@ -34,7 +34,7 @@ jobs:
     - name: Zip Project
       run: zip output.zip -r .
     - name: Upload to Lambda
-      uses: appleboy/lambda-action
+      uses: appleboy/lambda-action@v0.0.2
       with:
         aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
