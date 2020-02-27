@@ -10,7 +10,9 @@ const fetchCurrentMenu = async () => {
   await (await fetch(SET_COOKIES_URL)).text();
   const text = await (await fetch(MENU_URL)).text();
 
-  fs.writeFileSync("./last_fetch.html", text);
+  if (process.env.WRITE_FETCHED) {
+    fs.writeFileSync("./last_fetch.html", text);
+  }
 
   const result = parsePage(text);
 
