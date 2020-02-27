@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <script nonce="fNr13wcgE0q84SiSRcOs+RxNVyxmxa8WOROXH+shD30=">
+      dataLayer = [
+        {
+          user_id: "",
+          user_uuid: ""
+        }
+      ];
+    </script>
+    <!-- Google Tag Manager -->
+    <script nonce="fNr13wcgE0q84SiSRcOs+RxNVyxmxa8WOROXH+shD30=">
+      (function(d) {
+        var o = d.createElement;
+        d.createElement = function() {
+          var e = o.apply(d, arguments);
+          if (e.tagName === "SCRIPT") {
+            e.setAttribute(
+              "nonce",
+              "fNr13wcgE0q84SiSRcOs+RxNVyxmxa8WOROXH+shD30="
+            );
+          }
+          return e;
+        };
+      })(document);
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(
+        window,
+        document,
+        "script",
+        "dataLayer",
+        "GTM-T25893G&gtm_auth=d99xr4EkUhpMeNAws4UeOQ&gtm_preview=env-13&gtm_cookies_win=x"
+      );
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>My Fooda</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+
+    <meta name="apple-itunes-app" content="app-id=476660276" />
+    <meta name="google-play-app" content="app-id=com.vokal.fooda" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <link rel="android-touch-icon" href="/images/android-icon.png" />
+
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta
+      name="csrf-token"
+      content="TvfXOOR7i62ovKJ/UTlubQf1+TjAgQVW3YFVbQxcu4eV9kbktkXFo+E4ro4OV1UcSPzpNKMaVfWc3GZMCpfySg=="
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/favicon-36e6982263a6d7fcfd137b60afd4ba7acbb98e8adab343ee3a1983209b994ae6.ico"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="/assets/phoenix-f5220027098d695aaeefcdd2993ede261e12b92b19b6789fb7f632f2cfd54b8c.css"
+    />
+    <script src="/assets/phoenix-8b7261fd2daf2fc1a0de3a8fd8bd57fefcd9328e814f73b03fccd46af6c91c17.js"></script>
+    <script src="/assets/phoenix/shared-9a5900340b6df32a87e1a6208587c7d4679ef6c041c2fe8eeda31fd1e6d33fdd.js"></script>
+    <script src="/assets/phoenix/myfooda-1f468cec0ecce5a8a2295f1f14e38e40780019794250e94c36ac76535bd6ba30.js"></script>
+    <script nonce="fNr13wcgE0q84SiSRcOs+RxNVyxmxa8WOROXH+shD30=">
+      (function() {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+          var fbds = document.createElement("script");
+          fbds.async = true;
+          fbds.src = "//connect.facebook.net/en_US/fbds.js";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(fbds, s);
+          _fbq.loaded = true;
+        }
+        _fbq.push(["addPixelId", "1610004975937742"]);
+      })();
+      window._fbq = window._fbq || [];
+      window._fbq.push(["track", "PixelInitialized", {}]);
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        alt=""
+        style="display:none"
+        src="https://www.facebook.com/tr?id=1610004975937742&amp;ev=PixelInitialized"
+      />
+    </noscript>
+
+    <script nonce="fNr13wcgE0q84SiSRcOs+RxNVyxmxa8WOROXH+shD30=">
+      try {
+        new SmartBanner({
+          daysHidden: 7,
+          daysReminder: 7,
+          appStoreLanguage: "us",
+          title: "Fooda",
+          author: "Fooda, Inc.",
+          button: "Open",
+          store: {
+            ios: "On the App Store",
+            android: "In Google Play",
+            windows: "In Windows store"
+          },
+          price: {
+            ios: "FREE",
+            android: "FREE",
+            windows: "FREE"
+          }
+        });
+        function _smartbanner_scroll($selector) {
+          var banner_height = parseInt($(".smartbanner-show").css("marginTop"));
+          if (banner_height > 0) {
+            if ($(this).scrollTop() > banner_height) {
+              $selector.css("top", 0);
+            } else {
+              $selector.css("top", banner_height - $(this).scrollTop() + "px");
+            }
+          } else {
+            $selector.css("top", 0);
+          }
+        }
+        $(window).scroll(function() {
+          if ($(".navbar-fixed-top").length)
+            _smartbanner_scroll($(".navbar-fixed-top"));
+          if ($(".secondary-bar--pinned").length)
+            _smartbanner_scroll($(".secondary-bar--pinned"));
+        });
+        $(".smartbanner-close").on("click", function() {
+          $(".navbar-fixed-top").css("top", 0);
+          $(".secondary-bar--pinned").css("top", 0);
+        });
+      } catch (error) {
+        console.error(error);
+      }
+    </script>
+
+    <script
+      src="https://use.typekit.com/ozn4gku.js"
+      type="text/javascript"
+    ></script>
+    <script nonce="fNr13wcgE0q84SiSRcOs+RxNVyxmxa8WOROXH+shD30=">
+      try {
+        Typekit.load();
+      } catch (e) {}
+    </script>
+    <!--[if lt IE 9]>
+      <script src="/assets/ltIE9-c0fb8e93a939e16e38361d99e83ae4a5e0e8ae3a4b1636b4f6a1699740eea3f3.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T25893G&gtm_auth=d99xr4EkUhpMeNAws4UeOQ&gtm_preview=env-13&gtm_cookies_win=x"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script nonce="fNr13wcgE0q84SiSRcOs+RxNVyxmxa8WOROXH+shD30=">
+      $(document).ready(function() {
+        GTMHelper.trackScreenView("Account Home Page", "/accounts/1729", {
+          account_id: "1729",
+          event_id: "732968",
+          has_select_events: "0",
+          has_popup_events: "1",
+          has_ms_events: "0"
+        });
+      });
+    </script>
+
+    <!-- HEADER BAR -->
+    <nav class="header-bar">
+      <div class="header-bar__wrap">
+        <ul class="header-bar__left">
+          <li class="header-bar__item">
+            <a class="header-bar__logo" href="/my"
+              ><img
+                src="/assets/phoenix/FoodaLogo-20x100-b23f15f20ede662ec3167a246adf0836287ec2acf07fdd493fa03c62fe0f0c4d.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+        <ul class="header-bar__right">
+          <li class="header-bar__item hidden" id="get-mobile-app">
+            <a href="#" class="icon">
+              <img
+                src="/assets/phoenix/phone-icon-b02f27940ba266d09e2331ca53eb7eeff6ba666f7937337df944ed150b942288.png"
+                alt="Phone icon"
+              />
+            </a>
+            <a href="#" class="text">get mobile app</a>
+          </li>
+          <li class="header-bar__item">
+            <a href="https://catering.fooda.com/">catering</a>
+          </li>
+
+          <li class="header-bar__item">
+            <a href="/register">sign up</a>
+          </li>
+          <li class="header-bar__item">
+            <a href="/login">login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- NAV BAR -->
+    <div class="nav-bar">
+      <nav class="nav-bar__inner">
+        <!-- CAL -->
+        <div class="cal js-show-left">
+          <div class="cal__container">
+            <!-- CAL FRAME -->
+            <div class="cal__frame--active">
+              <!-- CAL DAY -->
+              <a href="#" class="cal__day--disabled">
+                <div class="cal__day__inner">
+                  <div class="cal__day__inner__info">
+                    <div class="cal__day__inner__info__label">today</div>
+                    <div class="cal__day__inner__info__date">27</div>
+                  </div>
+                  <div class="cal__day__inner__box">
+                    <div class="cal__day__inner__box__inner"></div>
+                  </div>
+                </div>
+              </a>
+
+              <!-- CAL DAY -->
+              <a href="/my?date=2020-02-28" class="cal__day--active">
+                <div class="cal__day__inner">
+                  <div class="cal__day__inner__info">
+                    <div class="cal__day__inner__info__label">Friday</div>
+                    <div class="cal__day__inner__info__date">28</div>
+                  </div>
+                  <div class="cal__day__inner__box">
+                    <div class="cal__day__inner__box__inner"></div>
+                  </div>
+                </div>
+              </a>
+
+              <!-- CAL DAY -->
+              <a href="/my?date=2020-03-02" class="cal__day">
+                <div class="cal__day__inner">
+                  <div class="cal__day__inner__info">
+                    <div class="cal__day__inner__info__label">Mon</div>
+                    <div class="cal__day__inner__info__date">02</div>
+                  </div>
+                  <div class="cal__day__inner__box">
+                    <div class="cal__day__inner__box__inner"></div>
+                  </div>
+                </div>
+              </a>
+
+              <!-- CAL DAY -->
+              <a href="/my?date=2020-03-03" class="cal__day">
+                <div class="cal__day__inner">
+                  <div class="cal__day__inner__info">
+                    <div class="cal__day__inner__info__label">Tue</div>
+                    <div class="cal__day__inner__info__date">03</div>
+                  </div>
+                  <div class="cal__day__inner__box">
+                    <div class="cal__day__inner__box__inner"></div>
+                  </div>
+                </div>
+              </a>
+
+              <!-- CAL DAY -->
+              <a href="/my?date=2020-03-04" class="cal__day">
+                <div class="cal__day__inner">
+                  <div class="cal__day__inner__info">
+                    <div class="cal__day__inner__info__label">Wed</div>
+                    <div class="cal__day__inner__info__date">04</div>
+                  </div>
+                  <div class="cal__day__inner__box">
+                    <div class="cal__day__inner__box__inner"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cal__chevron--right" data-show="right"></div>
+            <div class="cal__chevron--left" data-show="left"></div>
+            <!-- CAL FRAME -->
+            <div class="cal__frame">
+              <!-- CAL DAY -->
+              <a href="/my?date=2020-03-05" class="cal__day">
+                <div class="cal__day__inner">
+                  <div class="cal__day__inner__info">
+                    <div class="cal__day__inner__info__label">Thu</div>
+                    <div class="cal__day__inner__info__date">05</div>
+                  </div>
+                  <div class="cal__day__inner__box">
+                    <div class="cal__day__inner__box__inner"></div>
+                  </div>
+                </div>
+              </a>
+
+              <!-- CAL DAY -->
+              <a href="/my?date=2020-03-06" class="cal__day">
+                <div class="cal__day__inner">
+                  <div class="cal__day__inner__info">
+                    <div class="cal__day__inner__info__label">Fri</div>
+                    <div class="cal__day__inner__info__date">06</div>
+                  </div>
+                  <div class="cal__day__inner__box">
+                    <div class="cal__day__inner__box__inner"></div>
+                  </div>
+                </div>
+              </a>
+
+              <!-- CAL DAY -->
+              <a href="/my?date=2020-03-09" class="cal__day">
+                <div class="cal__day__inner">
+                  <div class="cal__day__inner__info">
+                    <div class="cal__day__inner__info__label">Mon</div>
+                    <div class="cal__day__inner__info__date">09</div>
+                  </div>
+                  <div class="cal__day__inner__box">
+                    <div class="cal__day__inner__box__inner"></div>
+                  </div>
+                </div>
+              </a>
+
+              <!-- CAL DAY -->
+              <a href="/my?date=2020-03-10" class="cal__day">
+                <div class="cal__day__inner">
+                  <div class="cal__day__inner__info">
+                    <div class="cal__day__inner__info__label">Tue</div>
+                    <div class="cal__day__inner__info__date">10</div>
+                  </div>
+                  <div class="cal__day__inner__box">
+                    <div class="cal__day__inner__box__inner"></div>
+                  </div>
+                </div>
+              </a>
+
+              <!-- CAL DAY -->
+              <a href="/my?date=2020-03-11" class="cal__day">
+                <div class="cal__day__inner">
+                  <div class="cal__day__inner__info">
+                    <div class="cal__day__inner__info__label">Wed</div>
+                    <div class="cal__day__inner__info__date">11</div>
+                  </div>
+                  <div class="cal__day__inner__box">
+                    <div class="cal__day__inner__box__inner"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- SECONDARY BAR -->
+    <div class="secondary-bar">
+      <div class="secondary-bar__container">
+        <div class="secondary-bar__inner">
+          <div class="secondary-bar__left">
+            <div class="secondary-bar__event-text">
+              Lunch at Davenport, 25 First St
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVIEW BAR -->
+
+    <!-- BANNERS -->
+
+    <!-- FLASH -->
+
+    <div style="margin-top: 2.5em"></div>
+    <div class="myfooda-event--popup js-myfooda-event js-event-section">
+      <div class="myfooda-event__info js-event-header">
+        <div class="myfooda-event__left">
+          <div class="myfooda-event__product">popup restaurants</div>
+          <div class="myfooda-event__time">11:30AM - 2:00PM</div>
+          <div class="myfooda-event__upcoming-message"></div>
+        </div>
+        <!-- START show for delivery events -->
+        <div class="myfooda-event__right" style="display: none">
+          <div class="myfooda-event__filter-label">Show me:</div>
+          <a class="myfooda-event__filter js-cuisine-option">gluten-free</a>
+          <a class="myfooda-event__filter js-cuisine-option">vegetarian</a>
+          <a class="myfooda-event__filter js-cuisine-option">vegan</a>
+        </div>
+        <!-- END show for delivery events -->
+      </div>
+      <div class="myfooda-event__restaurants js-event-vendors">
+        <!-- <div class="myfooda-event__restaurant js-vendor-tile"> -->
+        <a
+          class="myfooda-event__restaurant js-vendor-tile"
+          href="http://app.fooda.com/accounts/1729/popup/menu_page/P0733968/items?filterable%5Bvendor_id%5D=6563"
+        >
+          <img
+            class="myfooda-event__photo"
+            data-placeholder-src="https://s3.amazonaws.com/snappea-public/select_email_121914/all_vendors_image_600x400.png"
+            src="https://snappea-prod-private.s3.amazonaws.com/assets/medium3x2/115901.png?1570741103"
+            alt="Jersey Mike&#39;s"
+          />
+          <div class="myfooda-event__meta">
+            <div class="myfooda-event__meta-right myfooda-vendor-location-name">
+              Atrium
+            </div>
+            <div class="myfooda-event__meta-left">
+              <div class="myfooda-event__name">Jersey Mike&#39;s</div>
+              <div class="myfooda-event__cuisines">
+                <div class="myfooda-event__cuisine">Deli</div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- </div> -->
+
+        <!-- <div class="myfooda-event__restaurant js-vendor-tile"> -->
+        <a
+          class="myfooda-event__restaurant js-vendor-tile"
+          href="http://app.fooda.com/accounts/1729/popup/menu_page/P0733968/items?filterable%5Bvendor_id%5D=4785"
+        >
+          <img
+            class="myfooda-event__photo"
+            data-placeholder-src="https://s3.amazonaws.com/snappea-public/select_email_121914/all_vendors_image_600x400.png"
+            src="https://snappea-prod-private.s3.amazonaws.com/assets/medium3x2/111068.jpg?1563551193"
+            alt="Brothers Restaurant Tacos"
+          />
+          <div class="myfooda-event__meta">
+            <div class="myfooda-event__meta-right myfooda-vendor-location-name">
+              Atrium 2
+            </div>
+            <div class="myfooda-event__meta-left">
+              <div class="myfooda-event__name">Brothers Restaurant Tacos</div>
+              <div class="myfooda-event__cuisines">
+                <div class="myfooda-event__cuisine">Mexican</div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="page-footer">
+      <div class="page-footer__wrap">
+        <div class="page-footer__col">
+          <ul class="page-footer__list">
+            <!-- <li class="page-footer__item"><a href="#" class="page-footer__link">Home</a></li> -->
+            <li class="page-footer__item">
+              <a
+                href="https://www.fooda.com/what-we-do"
+                class="page-footer__link"
+                >What We Do</a
+              >
+            </li>
+            <!-- <li class="page-footer__item"><a href="#" class="page-footer__link">Catering</a></li> -->
+            <li class="page-footer__item">
+              <a
+                href="https://www.fooda.com/restaurant-partners"
+                class="page-footer__link"
+                >Restaurant Partners</a
+              >
+            </li>
+            <li class="page-footer__item">
+              <a
+                href="https://www.fooda.com/contact-us"
+                class="page-footer__link"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__col">
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a href="https://www.fooda.com/blog" class="page-footer__link"
+                >Blog</a
+              >
+            </li>
+            <li class="page-footer__item">
+              <a href="https://www.fooda.com/faqs" class="page-footer__link"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__col">
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a
+                href="https://www.fooda.com/terms-of-use"
+                class="page-footer__link"
+                >Terms of Use</a
+              >
+            </li>
+            <li class="page-footer__item">
+              <a
+                href="https://www.fooda.com/privacy-policy"
+                class="page-footer__link"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="page-footer__item">
+              &copy; 2020 Fooda, Inc. All rights reserved.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- begin olark code -->
+    <script
+      data-cfasync="false"
+      nonce="fNr13wcgE0q84SiSRcOs+RxNVyxmxa8WOROXH+shD30="
+    >
+      window.olark ||
+        (function(n, e, t, a, i, o, c, r, u) {
+          function l() {
+            c.P(a), o(a);
+          }
+          (o = function() {
+            c.s.push(arguments);
+          }),
+            (c = o._ = {
+              p: { 0: +new Date() },
+              P: function(n) {
+                c.p[n] = new Date() - c.p[0];
+              },
+              s: [],
+              l: null,
+              i: function() {},
+              f: null,
+              v: "olark"
+            }),
+            (o.configure = function() {
+              o(t, "configure", arguments);
+            }),
+            (o.extend = function() {
+              o(t, "extend", arguments);
+            }),
+            (o.declare = function() {
+              o(t, "declare", arguments);
+            }),
+            (o.identify = function() {
+              o(t, "identify", arguments);
+            }),
+            n.addEventListener
+              ? n.addEventListener(a, l, !1)
+              : n.attachEvent("on" + a, l),
+            c.P(1),
+            c.P(2),
+            (n.olark = o),
+            (r = e.createElement(i)),
+            (u = e.getElementsByTagName(i)[0]),
+            (r.async = 1),
+            (r.src = "//static.olark.com/jsclient/loader1.js"),
+            u.parentNode.insertBefore(r, u);
+        })(window, document, "call", "load", "script");
+      olark.identify("9653-216-10-5069");
+    </script>
+    <noscript
+      ><a
+        href="https://www.olark.com/site/9653-216-10-5069/contact"
+        title="Contact us"
+        target="_blank"
+        >Questions? Feedback?</a
+      >
+      powered by
+      <a href="http://www.olark.com?welcome" title="Olark live chat software"
+        >Olark live chat software</a
+      ></noscript
+    >
+    <!-- end olark code -->
+  </body>
+</html>

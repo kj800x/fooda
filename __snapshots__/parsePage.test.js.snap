@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parsePage works on today_active.html 1`] = `
+Object {
+  "currentDay": 27,
+  "menuDay": 27,
+  "popups": Array [
+    Object {
+      "link": "http://app.fooda.com/accounts/1729/popup/menu_page/P0733968/items?filterable%5Bvendor_id%5D=6563",
+      "name": "Jersey Mike's",
+    },
+    Object {
+      "link": "http://app.fooda.com/accounts/1729/popup/menu_page/P0733968/items?filterable%5Bvendor_id%5D=4785",
+      "name": "Brothers Restaurant Tacos",
+    },
+  ],
+}
+`;
+
+exports[`parsePage works on today_inactive.html 1`] = `
+Object {
+  "currentDay": 27,
+  "menuDay": 28,
+  "popups": Array [
+    Object {
+      "link": "http://app.fooda.com/accounts/1729/popup/menu_page/P0733968/items?filterable%5Bvendor_id%5D=6563",
+      "name": "Jersey Mike's",
+    },
+    Object {
+      "link": "http://app.fooda.com/accounts/1729/popup/menu_page/P0733968/items?filterable%5Bvendor_id%5D=4785",
+      "name": "Brothers Restaurant Tacos",
+    },
+  ],
+}
+`;

@@ -1,0 +1,20 @@
+{
+  "name": "@kj800x/fooda",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js",
+    "repl": "node repl.js"
+  },
+  "author": "Kevin Johnson <kevin@kj800x.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "fetch-cookie": "^0.7.3",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
