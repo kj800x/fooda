@@ -1,9 +1,9 @@
-const NOW = new Date();
 const DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
 const template = ({
   popups,
   dow,
+  NOW,
   pubDate
 }) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
@@ -32,15 +32,16 @@ const template = ({
 </channel>
 </rss>`;
 
-const buildRss = menuInfo => {
-  const pubDate = new Date();
+const buildRss = (menuInfo, NOW) => {
+  const pubDate = new Date(NOW);
   pubDate.setDate(menuInfo.menuDay);
   pubDate.setMinutes(0);
   pubDate.setHours(6);
   pubDate.setSeconds(0);
   pubDate.setMilliseconds(0);
-  
-  const popups = menuInfo.currentDay !== menuInfo.menuDay ? menuInfo.popups : []
+
+  const popups =
+    menuInfo.currentDay !== menuInfo.menuDay ? menuInfo.popups : [];
   const dow = DAYS[pubDate.getDay() - 1];
 
   return template({ pubDate, NOW, popups, dow });
